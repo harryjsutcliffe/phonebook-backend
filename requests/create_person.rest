@@ -1,0 +1,20 @@
+POST http://localhost:3001/api/persons/
+content-type: application/json
+
+{
+    "name": "John Good",
+    "number": 1234
+}
+
+###
+DELETE  http://localhost:3001/api/persons/7118148044828863
+content-type: application/json
+
+
+### Invalid Person
+POST http://localhost:3001/api/persons/
+content-type: application/json
+
+{
+    "number": 1234
+}
